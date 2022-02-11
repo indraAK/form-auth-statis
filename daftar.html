@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/main.css" />
+    <title>Daftar</title>
+  </head>
+  <body>
+    <main
+      class="max-w-xl lg:max-w-5xl mx-auto h-full min-h-screen px-4 py-8 grid place-content-center grid-cols-1"
+    >
+      <div
+        class="rounded-md overflow-x-hidden lg:grid lg:grid-cols-2 shadow-sm lg:shadow-none"
+      >
+        <div class="bg-white px-8 py-8 sm:px-[60px] sm:py-12 form-container">
+          <img src="./src/images/logo.svg" alt="Logo" class="w-12" />
+          <h1 class="form-title">Bikin akun baru</h1>
+          <p class="form-subtitle">
+            Nggak susah kok, kamu cuma tinggal masukin beberapa data aja terus
+            langsung jadi deh!
+          </p>
+          <form class="flex flex-col space-y-5 mt-8">
+            <div class="field">
+              <label for="fullname">Nama Lengkap</label>
+              <input
+                type="text"
+                placeholder="Masukan nama lengkapmu"
+                name="fullname"
+                id="fullname"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                placeholder="Masukan email yang valid"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="password">Kata Sandi</label>
+              <input
+                type="password"
+                placeholder="Buat kata sandi yang mudah diingat"
+                name="password"
+                id="password"
+                required
+              />
+            </div>
+            <p class="text-xs leading-normal sm:text-sm text-[#4B5563]">
+              Dengan mendaftar berarti kamu setuju dengan Terms of Service dan
+              Privacy Policy dari belajarskuy.io
+            </p>
+            <button class="btn btn-primary">Mendaftar</button>
+          </form>
+          <p class="text-center text-sm mt-8 text-slate-600 font-semibold">
+            Sudah punya akun?
+            <a href="/login.html" class="text-indigo-600">Masuk</a>
+          </p>
+        </div>
+
+        <div
+          class="w-full py-6 hidden lg:grid lg:place-content-center bg-gradient-to-b from-[#3730A3] to-[#312E81]"
+        >
+          <img src="./src/images/daftar.png" alt="Gambar Daftar" />
+          <div class="px-16 mt-12">
+            <span class="text-sm font-semibold text-white opacity-50"
+              >belajarskuy.io</span
+            >
+            <p class="text-lg text-white mt-3">
+              Ayo mendaftar dan belajar dengan rajin di sini supaya jadi pinter
+              dan nggak jadi beban kayak si Denis!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

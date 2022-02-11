@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/main.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main
+      class="max-w-xl lg:max-w-5xl mx-auto h-full min-h-screen px-4 py-8 grid place-content-center grid-cols-1"
+    >
+      <div
+        class="rounded-md overflow-x-hidden lg:grid lg:grid-cols-2 shadow-sm lg:shadow-none"
+      >
+        <div class="bg-white px-8 py-8 sm:px-[60px] sm:py-12 form-container">
+          <img src="./src/images/logo.svg" alt="Logo" class="w-12" />
+          <h1 class="form-title">Masuk ke akun kamu</h1>
+          <p class="form-subtitle">
+            Belajar gratis di belajarskuy.io, dan memulai karir yang kamu
+            cita-citakan sejak dalam embrio!
+          </p>
+          <form class="flex flex-col space-y-5 mt-8">
+            <div class="field">
+              <label for="email" class="label">Email</label>
+              <input
+                type="email"
+                placeholder="Masukan email yg terdaftar"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+            <div class="field">
+              <div class="flex items-baseline justify-between">
+                <label for="password" class="label">Kata Sandi</label>
+                <a
+                  href="/lupa-password.html"
+                  class="text-xs sm:text-sm font-semibold text-indigo-600"
+                  >Lupa Kata Sandi?</a
+                >
+              </div>
+              <input
+                type="password"
+                placeholder="Masukan kata sandi mu"
+                name="password"
+                id="password"
+                required
+              />
+            </div>
+            <label for="remember" class="flex items-center">
+              <input
+                type="checkbox"
+                name="remember"
+                id="remember"
+                class="hidden peer"
+              />
+              <div
+                class="custom-checkbox w-5 h-5 rounded flex items-center justify-center bg-slate-200 border border-slate-300 peer-checked:bg-indigo-600 peer-checked:border-indigo-300 peer-checked:ring-1 peer-checked:ring-indigo-400/50"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 text-white hidden icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <span class="inline-block ml-3 text-sm font-semibold"
+                >Ingat saya</span
+              >
+            </label>
+            <button class="btn btn-primary">Masuk</button>
+          </form>
+          <p class="text-center text-sm mt-8 text-slate-600 font-semibold">
+            Belum punya akun?
+            <a href="/daftar.html" class="text-indigo-600">Daftar sekarang!</a>
+          </p>
+        </div>
+
+        <div
+          class="w-full py-6 hidden lg:grid lg:place-content-center bg-gradient-to-b from-[#3730A3] to-[#312E81]"
+        >
+          <img src="./src/images/masuk.png" alt="Gambar Masuk" />
+          <div class="px-16 mt-12">
+            <span class="text-sm font-semibold text-white opacity-50"
+              >belajarskuy.io</span
+            >
+            <p class="text-lg text-white mt-3">
+              Belajar secara online semakin mudah – tetep belajar walaupun pake
+              kuota dari Kemendikbud hehe~
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
